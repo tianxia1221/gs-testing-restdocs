@@ -28,6 +28,6 @@ public class WebLayerTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello World")))
-                .andDo(document("home"));
+                .andDo(document("home1"));
     }
 }
